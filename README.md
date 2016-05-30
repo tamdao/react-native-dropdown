@@ -2,18 +2,23 @@
 Simple DropDown menu for React Native App!
 
 ## Introduction
-React Native Dropdown is simple, customizable and easy to use dropdown in React Native. Works with both Android and IOS. 
+React Native Dropdown is simple, customizable and easy to use dropdown in React Native. Works with both Android and IOS.
 
 ## Installation
+If you use RN 0.25 or above, run
 ```
 npm i react-native-dropdown --save
 ```
+If you use RN 0.24 or older, return
+```
+npm i react-native-dropdown@0.0.6 --save
+```
 
 ## Usage
-Require it inside your Javascript files. Also supporting components using object-deconstructing. 
-```Select``` ```Option``` ```OptionList```, Also a positioning utility method ```updatePosition```. 
+Require it inside your Javascript files. Also supporting components using object-deconstructing.
+```Select``` ```Option``` ```OptionList```, Also a positioning utility method ```updatePosition```.
 
-updatePosition should be called in ```componentDidMount``` with refs to the ```<Select />``` component and ```<OptionList />```. 
+updatePosition should be called in ```componentDidMount``` with refs to the ```<Select />``` component and ```<OptionList />```.
 
 This calculates component's PositionX and PositionY and sets it back into the component. The component uses it to position the ```<OptionList>``` using this co-ordinates.
 
@@ -55,7 +60,7 @@ class App extends Component {
     return this.refs['OPTIONLIST'];
   }
 
-  
+
   _canada(province) {
 
 	this.setState({
@@ -89,7 +94,7 @@ class App extends Component {
           </Select>
 
           <Text>Selected provicne of Canada: {this.state.canada}</Text>
-          
+
           <OptionList ref="OPTIONLIST"/>
       </View>
     );
@@ -100,7 +105,7 @@ AppRegistry.registerComponent('App', () => App);
 
 
 ```
-For complete implementation checkout example folder. 
+For complete implementation checkout example folder.
 
 ### Configuration
 

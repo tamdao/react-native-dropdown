@@ -1,15 +1,16 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
+ * @flow
  */
-var React = require('react-native');
-var {
-  Component,
+
+import React, { Component } from 'react';
+import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-} = React;
+  View
+} from 'react-native';
 
 const DropDown = require('react-native-dropdown');
 const {
@@ -48,8 +49,6 @@ class Example2 extends Component {
   }
 
   _canada(province) {
-
-
     this.setState({
       ...this.state,
       canada: province
@@ -88,57 +87,57 @@ class Example2 extends Component {
             optionListRef={this._getOptionList.bind(this)}
             defaultValue="Select a State in USA ..."
             onSelect={this._usa.bind(this)}>
-            <option>Alabama</option>
-          	<option>Alaska</option>
-          	<option>Arizona</option>
-          	<option>Arkansas</option>
-          	<option>California</option>
-          	<option>Colorado</option>
-          	<option>Connecticut</option>
-          	<option>Delaware</option>
-          	<option>District Of Columbia</option>
-          	<option>Florida</option>
-          	<option>Georgia</option>
-          	<option>Hawaii</option>
-          	<option>Idaho</option>
-          	<option>Illinois</option>
-          	<option>Indiana</option>
-          	<option>Iowa</option>
-          	<option>Kansas</option>
-          	<option>Kentucky</option>
-          	<option>Louisiana</option>
-          	<option>Maine</option>
-          	<option>Maryland</option>
-          	<option>Massachusetts</option>
-          	<option>Michigan</option>
-          	<option>Minnesota</option>
-          	<option>Mississippi</option>
-          	<option>Missouri</option>
-          	<option>Montana</option>
-          	<option>Nebraska</option>
-          	<option>Nevada</option>
-          	<option>New Hampshire</option>
-          	<option>New Jersey</option>
-          	<option>New Mexico</option>
-          	<option>New York</option>
-          	<option>North Carolina</option>
-          	<option>North Dakota</option>
-          	<option>Ohio</option>
-          	<option>Oklahoma</option>
-          	<option>Oregon</option>
-          	<option>Pennsylvania</option>
-          	<option>Rhode Island</option>
-          	<option>South Carolina</option>
-          	<option>South Dakota</option>
-          	<option>Tennessee</option>
-          	<option>Texas</option>
-          	<option>Utah</option>
-          	<option>Vermont</option>
-          	<option>Virginia</option>
-          	<option>Washington</option>
-          	<option>West Virginia</option>
-          	<option>Wisconsin</option>
-          	<option>Wyoming</option>
+            <Option>Alabama</Option>
+          	<Option>Alaska</Option>
+          	<Option>Arizona</Option>
+          	<Option>Arkansas</Option>
+          	<Option>California</Option>
+          	<Option>Colorado</Option>
+          	<Option>Connecticut</Option>
+          	<Option>Delaware</Option>
+          	<Option>District Of Columbia</Option>
+          	<Option>Florida</Option>
+          	<Option>Georgia</Option>
+          	<Option>Hawaii</Option>
+          	<Option>Idaho</Option>
+          	<Option>Illinois</Option>
+          	<Option>Indiana</Option>
+          	<Option>Iowa</Option>
+          	<Option>Kansas</Option>
+          	<Option>Kentucky</Option>
+          	<Option>Louisiana</Option>
+          	<Option>Maine</Option>
+          	<Option>Maryland</Option>
+          	<Option>Massachusetts</Option>
+          	<Option>Michigan</Option>
+          	<Option>Minnesota</Option>
+          	<Option>Mississippi</Option>
+          	<Option>Missouri</Option>
+          	<Option>Montana</Option>
+          	<Option>Nebraska</Option>
+          	<Option>Nevada</Option>
+          	<Option>New Hampshire</Option>
+          	<Option>New Jersey</Option>
+          	<Option>New Mexico</Option>
+          	<Option>New York</Option>
+          	<Option>North Carolina</Option>
+          	<Option>North Dakota</Option>
+          	<Option>Ohio</Option>
+          	<Option>Oklahoma</Option>
+          	<Option>Oregon</Option>
+          	<Option>Pennsylvania</Option>
+          	<Option>Rhode Island</Option>
+          	<Option>South Carolina</Option>
+          	<Option>South Dakota</Option>
+          	<Option>Tennessee</Option>
+          	<Option>Texas</Option>
+          	<Option>Utah</Option>
+          	<Option>Vermont</Option>
+          	<Option>Virginia</Option>
+          	<Option>Washington</Option>
+          	<Option>West Virginia</Option>
+          	<Option>Wisconsin</Option>
+          	<Option>Wyoming</Option>
           </Select>
 
           <View style={{ height: 20 }}></View>
